@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">COTIZACION PINTURAS</h1>
+    <div class="container">
+      <div class="jumbotron ">
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingrese largo de la pared</label>
+
+              <input
+              id="largo_pared"
+                type="number"
+                class="form-control"
+                placeholder="ingrese largo "
+              />
+            </div>
+          </div>
+<!--  -->
+          <div class="col-4">
+            <label for="">Ingrese ancho de la pared</label>
+            <input
+            id="ancho_pared"
+              type="number"
+              class="form-control"
+              placeholder="ingresa ancho"
+            />
+          </div>
+          <!--  -->
+          <div class="col-4">
+            <label for="">Ingrese el costo por m2</label>
+            <input
+              type="number"
+              id="costo_metro"
+              class="form-control"
+              placeholder="ingresa cuantos metros cuadrados son"
+            />
+          </div>
+        </div>
+        <!--  BOTON-->
+        <div class="row">
+          <div class="col-12">
+            <button  id="cotizacion" class="btn btn-outline-warning btn-block">
+              COTIZACION
+            </button>
+          </div>
+        </div>
+
+        <!--  PARA LA ALERTA -->
+        <div class="row mt-3">
+          <div class="col-12">
+            <div class="alert alert-warning" id="alerta" role="alert">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="pintura.js"></script>
+  </body>
+</html>
