@@ -1,4 +1,4 @@
-let base , altura , suma , resultado ;
+let base , altura , resultado ;
 
 let a = document.getElementById('area_boton');
  
@@ -10,8 +10,8 @@ function area_1(){
     altura=Number(document.getElementById('altura').value);
 
 // REALILZO LAS OPERACIONES
-suma= base+altura;
-resultado=suma/2;
+resultado=(base+altura)/2;
+
 
 // IMPRIMIR RESULTADO
 let resultado_alerta = document.getElementById('resultado_alerta');
