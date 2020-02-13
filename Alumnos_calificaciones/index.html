@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALIFICACIONES ALUMNOS</title>
+
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <h1 class="text-center">CALIFICACIONES ALUMNOS</h1>
+<div class="container">
+    <div class="jumbotron">
+    <div class="row">
+
+        <div class="col-12">
+            <div class="form-group">
+                <label for="">INGRESA MATRICULA</label>
+                <input type="text" id="matricula" class="form-control">
+            </div>
+        </div>
+        <!-- Calificacion matematicas  -->
+<div class="col-3 ml-5">
+    <div class="row">
+        <label for="">Ingresa Calificacion de Matematicas</label>
+        <input type="number" id="c_1" class="form-control">
+    </div>
+</div>
+<!-- Calificacion fisica -->
+
+<div class="col-3 ml-5" >
+    <div class="row">
+        <label for="">Ingresa calificacion de fisica</label>
+        <input type="number" id="c_2" class="form-control">
+    </div>
+</div>
+<!-- Calificacion Musica -->
+
+<div class="col-3 ml-5">
+    <div class="row">
+        <label for="">Ingresa calificacion de Musica</label>
+        <input type="number" id="c_3" class="form-control">
+    </div>
+</div>
+<!-- Calificacion de Computacion -->
+<div class="col-5 ml-5 mt-3">
+    <div class="row">
+        <label for="">Ingresa calificacion de Computacion</label>
+        <input type="number" id="c_4" class="form-control">
+    </div>
+</div>
+<!-- Calificacion de algebra -->
+<div class="col-5 ml-4 mt-3">
+    <div class="row">
+        <label for="">Ingresa calificacion de algebra</label>
+        <input type="number" id="c_5" class="form-control">
+    </div>
+</div>
+
+<!-- ESTABLEZCO EL BOTON -->
+<div class="col-12">
+    <div class="row">
+        <button class="btn btn-outline-primary btn-block mt-3" id="boton_prom">CALCULAR PROMEDIO</button>
+    </div>
+</div>
+
+<!-- Establezco alerta para la matricula de el alumno -->
+<div class="col-5 mt-3 ml-5">
+    <div class="row">
+        <div class="alert alert-info btn-block" id="matricula_alerta" role="alert">
+        </div>
+        </div>
+    </div>
+
+    <!-- Establezco alerta de promedio  si es mayor a 6-->
+<div class="col-5 mt-3 ml-5">
+    <div class="row">
+        <div class="alert alert-success btn-block" id="pasaste" role="alert">
+        </div>
+    </div>
+</div>
+
+    <!-- Establezco alerta de promedio  si es menor a 6-->
+<div class="col-12">
+    <div class="row">
+        <div class="alert alert-danger btn-block text-center" id="reprobaste" role="alert">
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+    </div>
+</div>
+<script src="./calificaciones.js"></script>
+</body>
+</html>

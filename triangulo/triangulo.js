@@ -10,7 +10,7 @@ function area_1(){
     altura=Number(document.getElementById('altura').value);
 
 // REALILZO LAS OPERACIONES
-resultado=(base+altura)/2;
+resultado=(base*altura)/2;
 
 
 // IMPRIMIR RESULTADO
