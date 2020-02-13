@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRIANGULO AREA</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">AREA DE UN TRIANGULO</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-2">
+            <!-- LADO A -->
+            <div class="form-group">
+              <label for="">Ingresa lado A</label>
+              <input type="number" id="l_a" class="form-control" />
+            </div>
+          </div>
+          <!-- LADO B -->
+          <div class="col-2 ml-3">
+            <div class="row">
+              <label for="">Ingresa lado B</label>
+              <input type="number" id="l_b" class="form-control" />
+            </div>
+          </div>
+          <!-- LADO C -->
+          <div class="col-2 ml-4">
+            <div class="row">
+              <label for="">Ingresa lado C</label>
+              <input type="number" id="l_c" class="form-control" />
+            </div>
+          </div>
+
+         
+          <!-- BOTON PARA CALCULAR -->
+          <div class="col-3 ml-3 mt-4">
+            <div class="row">
+              <button id="calcular" class="btn btn-outline-primary btn-block ">
+                CALCULAR
+              </button>
+            </div>
+          </div>
+          <!-- ALERTA -->
+          <div class="col-12">
+            <div class="row">
+              <div  id="resultado" class="alert alert-primary btn-block text-center" role="alert"></div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./t.js"></script>
+  </body>
+</html>

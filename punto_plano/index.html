@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">DISTANCIA ENTRE A Y B</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-5">
+            <label for="">INGRESE VALOR A</label>
+            <label for="">Ingrese valor x</label>
+            <input type="number" id="a_x" class="form-control" />
+            <label for="">INGRESE VALOR A</label>
+            <label for="">Ingrese valor y</label>
+            <input type="number" id="a_y" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-5">
+            <label for="">INGRESE VALOR B</label>
+            <label for="">Ingrese valor x</label>
+            <input type="number" id="b_x" class="form-control" />
+            <label for="">INGRESE VALOR B</label>
+            <label for="">Ingrese valor y</label>
+            <input type="number" id="b_y" class="form-control" />
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <button class="btn btn-outline-primary btn-block" id="calcular_boton">CALCULAR</button>
+          </div>
+        </div>
+
+        <div class="row mt-3 ">
+          <div class="col-12">
+            <div class="alert alert-warning btn-block text-center" id="alerta" role="alert"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="plano.js"></script>
+  </body>
+</html>
