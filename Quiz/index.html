@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESPUESTA</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">RESPUESTAS</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <!-- RESPUESTAS CORRECTAS -->
+        <div class="row">
+          <div class="col-3 ml-5">
+            <div class="form-group">
+              <label for="">RESPUESTAS CORRECTAS</label>
+              <input type="number" id="r_correcta" class="form-control" />
+            </div>
+          </div>
+          <!-- RESPUESTAS INCORRECTAS  -->
+          <div class="col-3 ml-5">
+            <div class="row">
+              <label for="">RESPUESTAS INCORRECTAS</label>
+              <input type="number" id="r_incorrecta" class="form-control" />
+            </div>
+          </div>
+          <!--  RESPUESTAS EN BLACNO -->
+          <div class="col-3 ml-5">
+            <div class="row">
+              <label for="">RESPUESTAS EN BLANCO</label>
+              <input type="number" id="r_blanco" class="form-control" />
+            </div>
+          </div>
+          <!-- BOTON  -->
+          <div class="col-12">
+            <div class="row">
+              <button class="btn btn-outline-primary btn-block" id="boton_puntaje">
+                CALCULAR PUNTAJE
+              </button>
+            </div>
+          </div>
+          <!-- ALERTA PUNTAJE FINAL -->
+          <div class="col-12 mt-3">
+            <div class="row">
+              <div class="alert alert-warning btn-block" id="puntaje_final" role="alert"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./quiz.js"></script>
+  </body>
+</html>
