@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHEQUE EMPLEADO</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">CHEQUE PARA EMPLEADO</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <!-- dias  -->
+              <label for="">Dias Fuera De La Ciudad</label>
+              <input type="number" id="dias" class="form-control" />
+            </div>
+          </div>
+          <!-- BOTON -->
+          <div class="col-6 ml-5">
+            <div class="row">
+              <button id="boton" class="btn btn-outline-primary btn-block mt-4">
+                Calcular
+              </button>
+            </div>
+          </div>
+          <!-- Alerta -->
+          <div class="col-12">
+            <div
+              id="alerta"
+              class="alert alert-primary btn-block text-center"
+              role="alert"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./empleado.js"></script>
+  </body>
+</html>
