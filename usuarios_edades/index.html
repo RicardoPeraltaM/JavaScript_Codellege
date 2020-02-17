@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDADES</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">¿QUIEN ES MAYOR?</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <!-- usuario  -->
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Nombre usuario 1:</label>
+              <input type="text" class="form-control" id="nombre_1" />
+            </div>
+          </div>
+          <!-- edad  -->
+          <div class="col-6">
+            <div class="row">
+              <label for="">Edad usuario 1:</label>
+              <input type="number" class="form-control" id="edad_1" />
+            </div>
+          </div>
+          <!-- usuario 2 -->
+          <div class="col-5 ml-5">
+            <div class="form-group">
+              <div class="row">
+                <label for="">Nombre usuario 2:</label>
+                <input type="text" class="form-control" id="nombre_2" />
+              </div>
+            </div>
+          </div>
+
+          <!-- edad -->
+          <div class="col-5 ml-5">
+            <div class="row">
+              <label for="">Edad usuario 2</label>
+              <input type="number" class="form-control" id="edad_2" />
+            </div>
+          </div>
+          <!-- BOTON -->
+          <div class="col-12">
+            <div class="row">
+              <button class="btn btn-outline-primary btn-block" id="boton">
+                CALCULAR
+              </button>
+              <!-- ALERTA -->
+              <div class="alert alert-primary btn-block text-center" role="alert" id="alerta"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./edad.js"></script>
+  </body>
+</html>
