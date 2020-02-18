@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articulos</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">Articulos</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Ingresa nombre del articulo:</label>
+                        <input type="text" class="form-control" id="nombre_articulo">
+                    </div>
+                </div>
+                <!-- CLAVE DEL ARTICULO -->
+                <div class="col-6">
+                    <div class="row">
+                        <label for="">Ingresa la clave:</label>
+                        <input type="number" class="form-control" id="clave">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label for="">Precio del articulo</label>
+                        <input type="number" id="precio_a" class="form-control">
+                    </div>
+                </div>
+                <!-- BOTON -->
+                <div class="col-12 mt-2">
+                    <div class="row">
+                        <button class="btn btn-outline-info btn-block" id="boton">DESCUENTO ARTICULO</button>
+                    </div>
+                </div>
+                <!-- ALERTA PRECIO ORIGINAL -->
+                <div class="col-5 mt-2 ml-5">
+                    <div class="row">
+                        <div class="alert alert-success btn-block" id="alerta_precio_original" role="alert">
+                        </div>
+                    </div>
+                </div>
+                <!-- ALERTA CON DESCUENTO -->
+                <div class="col-5 mt-2 ml-5">
+                    <div class="row">
+                        <div class="alert alert-danger btn-block" id="alerta_precio_descuento" role="alert">
+                        </div>
+                    </div>
+                </div>
+                <!-- ALERTA DE ERROR DE CLAVE -->
+          <div class="col-12">
+             <div class="row">
+                <div class="alert alert-warning btn-block" id="alerta_error_clave" role="alert">
+            </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./claves.js"></script>
+  </body>
+</html>

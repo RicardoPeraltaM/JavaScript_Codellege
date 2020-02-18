@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDAD HERMANOS</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">EDAD HERMANOS</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-6">
+            <!-- NOMBRE 1 -->
+            <div class="form-group">
+              <label for="">Ingrese nombre hermano 1:</label>
+              <input type="text" class="form-control" id="n_1" />
+            </div>
+          </div>
+          <!-- EDAD 1  -->
+          <div class="col-6">
+            <div class="row">
+              <label for="">Ingrese edad hermano 1:</label>
+              <input type="number" class="form-control" id="e_1" />
+            </div>
+          </div>
+          <!-- NOMBRE 2 -->
+          <div class="col-6">
+            <div class="row">
+              <label for="">Ingrese nombre hermano 2:</label>
+              <input type="text" class="form-control" id="n_2" />
+            </div>
+          </div>
+          <!-- EDAD 2 -->
+          <div class="col-6">
+            <div class="row">
+              <label for="">Ingrese edad hermano 2:</label>
+              <input type="number" class="form-control" id="e_2" />
+            </div>
+          </div>
+          <!-- boton -->
+          <div class="col-12 mt-2">
+            <div class="row">
+              <button class="btn btn-outline-primary btn-block" id="boton">
+                CALCULAR
+              </button>
+            </div>
+          </div>
+          <!-- ALERTA -->
+          <div class="col-6 mt-2">
+            <div class="row">
+              <div
+                class="alert alert-primary btn-block"
+                id="mayor"
+                role="alert"
+              ></div>
+            </div>
+          </div>
+          <div class="col-6 mt-2">
+            <div class="row">
+              <div
+                class="alert alert-success btn-block"
+                id="dif_edad"
+                role="alert"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./hermanos.js"></script>
+  </body>
+</html>

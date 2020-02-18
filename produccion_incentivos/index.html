@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incentivos produccion</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">Registro de la producción</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="col-12">
+          <!-- LUNES -->
+          <label for="">Ingresa las unidades del dia lunes</label>
+          <input type="number" class="form-control" id="u_1" />
+        </div>
+        <div class="col-12">
+          <label for="">Ingresa las unidades del dia Martes</label>
+          <input type="number" class="form-control" id="u_2" />
+        </div>
+        <div class="col-12">
+          <label for="">Ingresa las unidades del dia Miercoles</label>
+          <input type="number" class="form-control" id="u_3" />
+        </div>
+        <div class="col-12">
+          <label for="">Ingresa las unidades del dia Jueves</label>
+          <input type="number" class="form-control" id="u_4" />
+        </div>
+        <div class="col-12">
+          <label for="">Ingresa las unidades del dia Viernes</label>
+          <input type="number" class="form-control" id="u_5" />
+        </div>
+        <div class="col-12">
+          <label for="">Ingresa las unidades del dia Sabado</label>
+          <input type="number" class="form-control" id="u_6" />
+        </div>
+        <!-- BOTON -->
+        <div class="col-12 mt-3">
+          <div class="row">
+            <button class="btn btn-outline-primary btn-block" id="boton">Calcular</button>
+          </div>
+          <!-- alerta 1 -->
+          <div class="row mt-2">
+            <div class="col-6">
+              <div class="form-group">
+                <div class="alert alert-success" role="alert" id="si_incentivos"></div>
+              </div>
+            </div>
+            <!-- alerta 2 -->
+            <div class="col-6 ">
+              <div class="row mt-0">
+                <div class="alert alert-danger btn-block" role="alert" id="no_incentivos"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./incentivo.js"></script>
+  </body>
+</html>
