@@ -22,9 +22,9 @@ mayor=l_2
 }
 
 let suma = (l_3 +l_2+l_1)-mayor;
+
 // COMPARO SI EL NUMERO MAYOR ES MENOR A LA SUMA DE LOS OTROS DOS LADOS PARA CONFIRMAR QUE SI SEA TRIANGULO
 if (mayor<suma){
-
 if(l_1==l_2 && l_2==l_3){
 tipo_triangulo.innerText= "EL TRIANGULO ES equilatero"
 } else 
