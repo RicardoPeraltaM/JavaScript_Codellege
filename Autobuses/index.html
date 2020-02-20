@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <h1 class="text-center">AUTOBUSES</h1>
+<div class="container">
+    <div class="jumbotron">
+<div class="row">
+    <div class="col-6">
+      <div class="form-group">
+        <label for="">Selecciona el tipo de autobus</label>
+        <select name="" id="opciones_autobuses" class="form-control">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+      </div>
+    </div>
+
+<!-- ALERTA PARA EL PRECIO DEL AUTOBUS QUE SELECCIONE -->
+<div class="col-6 mt-4">
+    <div id="precio_autobus_seleccionado"></div>
+</div>
+
+<!-- NUMERO DE PERSONAS -->
+<div class="col-6">
+    <div class="row">
+            <label for="">Ingresa Numero De Personas</label>
+            <input type="number" class="form-control" id="n_personas">
+    </div>
+</div>
+
+<!-- KILOMETROS POR RECORRER -->
+<div class="col-5 ml-5">
+    <div class="row">
+        <label for="">Ingresa Km Por Recorrer</label>
+        <input type="number" class="form-control" id="n_km">
+    </div>
+</div>
+
+<!-- BOTON -->
+<div class="col-12">
+    <div class="row">
+        <button class="btn btn-outline-primary btn-block  mt-3" id="boton">Calcular precio autobus</button>
+    </div>
+</div>
+
+<!-- ALERTA PARA IMPRIMIR EL PRECIO FINAL DEL AUTOBUS -->
+<div class="col-12 mt-3">
+    <div id="precio_final_autobus"></div>
+</div>
+<!-- ALERTA PARA EL PRECIO POR PERSONA -->
+<div class="col-12 mt-3">
+    <div id="precio_persona_final"></div>
+</div>
+
+    </div>
+</div>
+
+    <script src="./autobuses.js"></script>
+</body>
+</html>
