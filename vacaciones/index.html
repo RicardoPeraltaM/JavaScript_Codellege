@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacaciones</title>
+    <link rel="icon" href="./icon/verano.png">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+</head>
+<body background="./icon/5b0afbfd74add7a5abcb393a8707d2e3.jpg">
+    <h1 class="text-center" style="color: white;">VACACIONES</h1>
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label for="">Ingresa tu nombre</label>
+                <input type="text" class="form-control" name="" id="nombre">
+            </div>
+        </div>
+        <div class="col-6">
+            <label for="">Selecciona tu destino</label>
+            <select class="form-control" name="" id="destino">
+                <option value=""></option>
+                <option value="Mexico">Mexico</option>
+                <option value="PV">PV</option>
+                <option value="Acapulco">Acapulco</option>
+                <option value="Cancun">Cancun</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-outline-success btn-block" id="boton">CALCULAR PRECIOS</button>
+        </div>
+
+        <div class="col-12">
+                <!-- Alerta -->
+                <div id="Destino_Seleccionado_Alerta"></div>
+                </div>
+        </div>
+        <!--  -->
+        <div class="col-12">
+                <!-- Alerta -->
+                <!-- LOS KM QUE RECORRE -->
+                <div id="km_por_recorrer"></div>
+            </div>
+
+<div class="col-12">
+<!-- Alerta -->
+<!-- Precio -->
+<div id="precio_final"></div>
+</div>
+
+        </div>
+
+
+</div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+    <script src="./vacaciones.js"></script>
+</body>
+</html>
