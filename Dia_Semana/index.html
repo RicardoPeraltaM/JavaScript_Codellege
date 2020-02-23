@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <h1 class="text-center">DIAS DE LA SEMANA</h1>
+<div class="container">
+    <div class="jumbotron">
+        <div class="col-12">
+            <label for="">SELECCIONA UN NUMERO</label>
+            <select name="" id="dias_semana" class="form-control">
+                <option value=""></option>
+                <option value="lunes">1</option>
+                <option value="martes">2</option>
+                <option value="miercoles">3</option>
+                <option value="jueves">4</option>
+                <option value="viernes">5</option>
+                <option value="sabado">6</option>
+                <option value="domingo">7</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <button id="boton" class="btn btn-outline-primary btn-block mt-3">DETERMINAR DIA</button>
+            <div id="alerta"></div>
+        </div>
+    </div>
+</div>
+    <script src="./dias.js"></script>
+</body>
+</html>
