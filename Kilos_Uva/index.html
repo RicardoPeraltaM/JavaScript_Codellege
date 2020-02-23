@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body
+    background="./img/Ripe-grapes-vine-branches-berries-blue-purple-red_3840x2160.jpg"
+  >
+    <h1 class="text-center" style="color: white;">Venta De Uvas</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-12">
+            <!-- INGRESA LOS KILOS DE UVA -->
+            <div class="form-group">
+              <label for="">Ingresa los kilos que gustas adquirir</label>
+              <input type="number" id="kilos_uvas" class="form-control" />
+            </div>
+          </div>
+          <!-- TIPO DE UVA -->
+          <div class="col-6">
+            <div class="row">
+              <label for="">Selecciona el tipo de uva</label>
+              <select name="" class="form-control" id="tipo_uva">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+              </select>
+            </div>
+          </div>
+          <!-- TAMAÑO -->
+          <div class="col-6">
+            <div class="row">
+              <label for="">Selecciona el tamaño:</label>
+              <select name="" id="tamaño_uvas" class="form-control">
+                <option value=""></option>
+                <option value="tamaño_1">1</option>
+                <option value="tamaño_2">2</option>
+              </select>
+            </div>
+          </div>
+          <!-- BOTON -->
+          <div class="col-12">
+            <button class="btn btn-outline-success btn-block mt-3"  id="boton">
+              Comprar
+            </button>
+          </div>
+        </div>
+        <!-- alerta total de compra -->
+        <div class="col-12">
+          <div id="total_compra"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./kilosUva.js"></script>
+  </body>
+</html>
