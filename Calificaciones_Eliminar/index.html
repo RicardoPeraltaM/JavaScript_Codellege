@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SINAPSIS</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body
+    background="./img/85-851857_spiral-design-dark-background-4k-pattern-4k-lineas.jpg"
+  >
+    <h1 class="text-center" style="color: white;">SINAPSIS</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <!-- calificacion 1 -->
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa calificacion de matematicas</label>
+              <input type="number" name="" id="c_1" class="form-control" />
+            </div>
+          </div>
+          <!-- calificacion 2 -->
+          <div class="col-6">
+            <div class="row">
+              <label for="">Ingresa calificacion de fisica</label>
+              <input type="number" name="" id="c_2" class="form-control" />
+            </div>
+          </div>
+          <!-- calificacion 3 -->
+          <div class="col-5 ml-5">
+            <div class="row">
+              <label for="">Ingresa calificacion de español</label>
+              <input type="number" name="" id="c_3" class="form-control" />
+            </div>
+          </div>
+          <!-- califiacion 4 -->
+          <div class="col-5 ml-5">
+            <div class="row">
+              <label for="">Ingresa calificacion de formacion integral</label>
+              <input type="number" name="" id="c_4" class="form-control" />
+            </div>
+          </div>
+          <!-- boton -->
+          <div class="col-12">
+            <button id="boton" class="btn btn-outline-primary btn-block mt-3">
+              CALCULAR
+            </button>
+            <!-- alerta -->
+            <div id="alerta"></div>
+            <div id="alerta2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./calificaciones.js"></script>
+  </body>
+</html>
