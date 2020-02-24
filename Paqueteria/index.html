@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body background="./img/logo-amazon.jpg">
+    <h1 class="text-center" style="color: white;">PAQUETERIA</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="col-12">
+          <label for="">Selecciona el destino:</label>
+          <select name="" id="destinos" class="form-control">
+            <option value=""></option>
+            <option value="11">América del Norte</option>
+            <option value="10">América Central</option>
+            <option value="12">América del Sur</option>
+            <option value="24">Europa</option>
+            <option value="27">Asia</option>
+          </select>
+        </div>
+        <div class="col-12">
+            <label for="">Peso del paquete (kg)</label>
+            <input type="number" name="" class="form-control" id="peso_paquete">
+        </div>
+        <div class="col-12">
+            <button class="btn btn-outline-primary btn-block mt-3" id="boton">Calcular</button>
+            <div id="alerta"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./paqueteria.js"></script>
+  </body>
+</html>
