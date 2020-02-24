@@ -9,11 +9,12 @@ function numerocapicua() {
   let  num_inver=0;
   let ayuda_num = numero;
   let resultado =0;
-  
+  // MATH FLOOR LO QUE HACE ES REDONDEAR SIEMPRE HACIA ABAJO
+  // EL MATH ROUND REDONDEA NORMAL
   while(ayuda_num !=0){
-    resultado=Math.round(ayuda_num%10);
-    num_inver=Math.round(num_inver*10+resultado)
-    ayuda_num= Math.round(ayuda_num/10);
+    resultado=Math.floor(ayuda_num%10);
+    num_inver=Math.floor(num_inver*10+resultado)
+    ayuda_num= Math.floor(ayuda_num/10);
   }
   
   if (numero==num_inver){
