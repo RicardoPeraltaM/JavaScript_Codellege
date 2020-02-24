@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BONO ANTIGUEDAD</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body background="./img/b906a471674b54ea0b5463c09a0b5392.jpg">
+    <h1 style="color: white;" class="text-center">BONO POR ANTIGUEDAD</h1>
+    <div class="container">
+      <div class="jumbotron" style="background-color: black;">
+        <div class="row">
+          <div class="col-6">
+            <!-- AÑOS CORRESPONDIENTES -->
+            <div class="form-group">
+              <label for="" style="color: white;"
+                >Ingresa los años correspondientes:</label
+              >
+              <input type="number" id="años_trabajo" class="form-control" />
+            </div>
+          </div>
+          <!-- SUELDO DEL EMPLEADO -->
+          <div class="col-6">
+            <div class="row">
+              <label for="" style="color: white;"
+                >Ingresa sueldo del empleado:</label
+              >
+              <input type="number" id="sueldo" class="form-control" />
+            </div>
+          </div>
+
+          <!-- BOTON -->
+          <div class="col-12">
+              <button id="boton_antiguedad" class="btn btn-outline-warning btn-block">CALCULAR BONO</button>
+              <div id="alerta_bono_antiguedad"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="./js/bono_antiguedad.js"></script>
+  </body>
+</html>
