@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEBRERO</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center">LOS MEJORES REGALOS</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+                <!-- TARJETAS -->
+              <label for="">TARJETAS</label>
+              <select name="" id="tarjeta" class="form-control">
+                <option value=""></option>
+                <option value="10">TARJETA DE OSOS (10$)</option>
+                <option value="8">TARJETA DE PATOS (8$)</option>
+                <option value="6">TARJETA DE CORAZONES (6$)</option>
+              </select>
+            </div>
+          </div>
+          <!-- chocolates -->
+          <div class="col-6">
+            <div class="row">
+              <label for="">CHOCOLATES</label>
+              <select name="" id="chocolates" class="form-control">
+                <option value=""></option>
+                <option value="90">Ferrero (90$)</option>
+                <option value="8">OREO(8$)</option>
+                <option value="26"> HERSHEY(26$)</option>
+                <option value="4"> CONEJITO (4$)</option>
+                <option value="2"> CORAZONES (2$)</option>
+              </select>
+            </div>
+          </div>
+          <!-- FLORES -->
+          <div class="col-6">
+            <label for="">FLORES</label>
+            <select name="" id="flores" class="form-control">
+              <option value=""></option>
+              <option value="120">RAMO ROSAS (120$)</option>
+              <option value="180">RAMO DE GIRASOLES (180$)</option>
+              <option value="200">RAMO DE TULIPANES (200$)</option>
+            </select>
+          </div>
+          <!--ANILLO  -->
+         <div class="col-6">
+             <label for="">ANILLO</label>
+             <select name="" id="anillo" class="form-control">
+               <option value=""></option>
+               <option value="2000">ANILLO DE ORO (2000$)</option>
+               <option value="1800">ANILLO ORO ROSADO (1800$)</option>
+               <option value="3000">ANILLO DE ORO CON PLATA (3000$)</option>
+             </select>
+           </div>
+         </div>
+
+         <div class="col-12">
+             <button class="btn btn-outline-primary  btn-block mt-3" id="boton">Calcular</button>
+             <div id="alerta"></div>
+         </div>
+        </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./feb.js"></script>
+  </body>
+</html>
