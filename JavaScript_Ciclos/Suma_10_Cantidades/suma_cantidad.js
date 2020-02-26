@@ -8,6 +8,8 @@
 // const ZonaImprimir = document.getElementById('output');
 // ZonaImprimir.innerHTML= resultado;
 
+let button; //variable global
+
 function crearDom() {
   const output = document.getElementById("output");
   for (let x = 1; x <= 5; x++) {
@@ -22,15 +24,42 @@ function crearDom() {
     // creamos el input
     const input = document.createElement("input");
     // añadimos atributo
-    input.setAttribute('type','number')
-    input.setAttribute('class','form-control')
-    input.setAttribute('id','n')
+    input.setAttribute("type", "number");
+    input.setAttribute("class", "form-control");
+    input.setAttribute("id", `n${x}`);
 
     // establecemos para saber donde poner la estructura
-    output.appendChild(div)
-    div.appendChild(label)
-    div.appendChild(input)
-    
+    output.appendChild(div);
+
+    div.appendChild(label);
+    div.appendChild(input);
   }
+
+  const button = document.createElement("button");
+  // ponemos texto en el boton
+  button.innerText = "Calcular suma";
+  // creamos el boton y establecemos clase y id
+  button.setAttribute("id", "boton");
+  button.setAttribute("class", "btn btn-outline-primary btn-block");
+  // abrimos hasta abajo del div llamado output el boton
+  output.appendChild(button);
+
+  // Llamamos la funcion
+  EventListener();
 }
+
+function EventListener() {
+  button = document.getElementById("boton");
+  button.addEventListener("click", suma);
+}
+
+function suma() {
+  let acumulador = 0;
+  for (let i = 1; i <= 5; i++) {
+    let numero = Number(document.getElementById(`n${i}`).value);
+    acumulador = acumulador + numero;
+  }
+  console.log(acumulador);
+}
+
 crearDom();
