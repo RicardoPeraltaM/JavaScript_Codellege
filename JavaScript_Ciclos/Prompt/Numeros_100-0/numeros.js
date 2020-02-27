@@ -5,13 +5,11 @@ function EventListener() {
 
 function numeros_imprimir() {
     const listGroup = document.getElementById("numeros_c");
-    let n=0;
 
-  for (let i = 0; i < 100; i++) {
-    n++;
+  for (let i =100; i > 0; i--) {
     const li = document.createElement("li");
     li.setAttribute("class", "list-group-item  text-center");
-    li.innerText = `Numero: ${n}`;
+    li.innerText = `Numero: ${i}`;
     listGroup.appendChild(li);
   }
 }
