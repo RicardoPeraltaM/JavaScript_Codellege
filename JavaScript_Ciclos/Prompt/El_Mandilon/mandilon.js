@@ -27,9 +27,15 @@ function Mandil() {
   while (primero) {
     //   ciudad
     let ciudad = prompt("ingresa nombre de la ciudad: ");
+    let li_ciudad = document.createElement("li");
+    li_ciudad.setAttribute("class", "form-group-items text-center");
+    li_ciudad.innerText = `Ciudad: ${ciudad}`;
+    ciudad_alerta.appendChild(li_ciudad);
+
     // si no ingresa nada se toma como vacio
     if (ciudad == "") {
       primero = false;
+      li_ciudad.innerText = "";
     }
     // confirmo que la ciudad se haya ingresado para poder continuar
     if (ciudad != "") {
