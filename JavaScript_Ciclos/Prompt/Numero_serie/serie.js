@@ -6,29 +6,20 @@ function EventListener() {
 }
 
 function numero_serie() {
-  let n = 5;
-  let inicio = true;
+  let n = 5,x = 1;
   let alerta = document.getElementById("alerta");
-  let alerta_1 = document.getElementById("alerta_1");
 
-  while (inicio) {
+  while (n < 1800) {
+    if (x % 2 == 0) {
+      n = n + 3;
+    } else {
+      n = n + 2;
+    }
+    x++;
+    console.log(n);
     let li = document.createElement("li");
     li.setAttribute("class", "form-group-items text-center");
-
-    let li_1 = document.createElement("li");
-    li_1.setAttribute("class", "form-group-items text-center");
-
-    n = n + 2;
-    console.log(n);
-    li_1.innerText = n;
-    alerta_1.appendChild(li_1);
-
-    n = n + 3;
     li.innerText = n;
-    console.log(n);
     alerta.appendChild(li);
-    if (n == 40) {
-      inicio = false;
-    }
   }
 }
