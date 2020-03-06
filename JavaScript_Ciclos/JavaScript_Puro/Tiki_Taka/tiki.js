@@ -52,9 +52,40 @@ function dom_ventas() {
 
   let boton_2 = document.createElement("button");
   boton_2.innerText = "Calcular Ventas";
-  boton_2.setAttribute("class", "btn btn-outline-warning btn-block");
+  boton_2.setAttribute("class", "btn btn-outline-warning btn-block mb-4");
   boton_2.setAttribute("id", "boton_2");
   output.appendChild(boton_2);
+
+  // // ALERTAS
+  let div = document.createElement("div");
+  div.classList.add("form-group");
+  // alerta 1
+  let alerta1 = document.createElement("alert");
+  alerta1.setAttribute(
+    "class",
+    "alert alert-danger text-center btn-block mt-2"
+  );
+  alerta1.setAttribute("id", "alerta1");
+  // alerta 2
+  let alerta2 = document.createElement("alert");
+  alerta2.setAttribute(
+    "class",
+    "alert alert-warning text-center btn-block mt-2"
+  );
+  alerta2.setAttribute("id", "alerta2");
+  // alerta 3
+  let alerta3 = document.createElement("alert");
+  alerta3.setAttribute(
+    "class",
+    "alert alert-primary text-center btn-block mt-2"
+  );
+  alerta3.setAttribute("id", "alerta3");
+
+  output.appendChild(div);
+  div.appendChild(alerta1);
+  div.appendChild(alerta2);
+  div.appendChild(alerta3);
+
   EventListener2();
 }
 
@@ -79,4 +110,13 @@ function hacer_op_ventas() {
       m500++;
     }
   }
+
+  // ALERTA
+  let alerta1 = document.getElementById("alerta1");
+  let alerta2 = document.getElementById("alerta2");
+  // let alerta3 = document.getElementById("alerta3");
+  //  IMPRIMO
+  alerta1.innerText = `Los numeros ventas mayores a 1000 son: ${m_1000}`;
+  alerta2.innerText = `Los numeros mayores a 500 y menores a 1000: ${mm500}`;
+  alerta3.innerText = `Las ventas menores o igual a 500 son: ${m500}`;
 }

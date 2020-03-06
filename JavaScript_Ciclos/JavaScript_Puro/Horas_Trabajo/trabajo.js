@@ -56,6 +56,7 @@ function horas_trabajo() {
   }
   
   pago_horas = pago_horas * acumulador;
+  
   let alerta = document.getElementById("alerta");
   alerta.innerText = `El sueldo final es de: ${pago_horas}`;
 }
