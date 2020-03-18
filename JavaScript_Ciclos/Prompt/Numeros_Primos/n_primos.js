@@ -1,5 +1,6 @@
 EventListener();
 
+
 function EventListener() {
   let boton = document.getElementById("boton");
   boton.addEventListener("click", numeros_primos);
