@@ -89,6 +89,8 @@ function rellenarArray() {
     if (isNaN(p)) {
       arrayPalabras[x] = p;
       console.log(p);
+      let array_primero = document.getElementById("array_primero");
+      array_primero.innerHTML = arrayPalabras;
     } else {
       arrayPalabras[x] = "";
     }
