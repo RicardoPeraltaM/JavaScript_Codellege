@@ -32,17 +32,11 @@ function AddInput() {
   inputFC.setAttribute("type", "number");
   inputFC.setAttribute("placeholder", "Ingrese valor");
   inputFC.setAttribute("id", `inputPromedio_${contadorInputs}`);
-
   contadorInputs++;
-
-
-
   output.appendChild(divcol);
   divcol.appendChild(divFG);
   divFG.appendChild(label);
   divFG.appendChild(inputFC);
-
-
 }
 
 function SacarPromedio() {
