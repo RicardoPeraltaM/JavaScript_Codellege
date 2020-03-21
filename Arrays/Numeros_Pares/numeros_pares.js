@@ -36,8 +36,10 @@ function N_pares(arreglo) {
   //alertas
   let n_par = document.getElementById("n_par");
   let n_impar = document.getElementById("n_impar");
+  let array_inicial = document.getElementById("array_inicial");
 
   //  Imprimimos :
+  array_inicial.innerText=`El array inicial es: ${arreglo}`
   n_par.innerText = `Numeros pares: ${arreglo_pares.sort()}`;
   n_impar.innerText = `Numeros impares: ${arreglo_impares.sort()}`;
 }
