@@ -11,6 +11,7 @@ EventListener();
 
 let array = [];
 let outArray = [];
+
 function EventListener() {
   document.getElementById("t_array").addEventListener("keypress", getSize);
   document.addEventListener("click", validarClick);
