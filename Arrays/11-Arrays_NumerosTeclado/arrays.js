@@ -32,7 +32,7 @@ function iniciarapp(num) {
     }
 
     if (contador2 == 5 && contador == 5) {
-      let suma = array1 + "," + array2;
+      let suma = array1.concat(array2);
       array3_Alerta.innerText = `Array 3: ${suma}`;
     }
   }

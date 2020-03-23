@@ -40,6 +40,6 @@ function N_pares(arreglo) {
 
   //  Imprimimos :
   array_inicial.innerText=`El array inicial es: ${arreglo}`
-  n_par.innerText = `Numeros pares: ${arreglo_pares.sort()}`;
-  n_impar.innerText = `Numeros impares: ${arreglo_impares.sort()}`;
+  n_par.innerText = `Numeros pares: ${arreglo_pares.sort((a,b)=>a-b)}`;
+  n_impar.innerText = `Numeros impares: ${arreglo_impares.sort((a,b)=>a-b)}`;
 }
