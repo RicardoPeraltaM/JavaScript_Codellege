@@ -9,7 +9,7 @@
 // ZonaImprimir.innerHTML= resultado;
 
 let button; //variable global
-
+// hola
 function crearDom() {
   const output = document.getElementById("output");
   for (let x = 1; x <= 5; x++) {
