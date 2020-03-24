@@ -1,0 +1,19 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.contenedor {
+  background: gray;
+  height: 90vh;
+  position: relative;
+}
+
+.contenedor span {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  background: red;
+}
