@@ -1,17 +1,22 @@
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
 
+#imagen {
+  margin-top: 1%;
+  margin-bottom: 0.7%;
+  margin-left: 40%;
+  width: 20%;
+}
 .container {
-  border: 3px solid black;
+  border: 3px solid white;
   position: relative;
   height: 80vh;
-
+  background-image: url(../assets/fondo3.jpg);
 }
 
 .container * {
   position: absolute;
   display: block;
-  width: 7%;
-
+  width: 10%;
 }
