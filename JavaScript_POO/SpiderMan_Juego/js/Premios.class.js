@@ -7,12 +7,27 @@ class Premio {
     this.posicionY = posicionY;
   }
 
-  crearImagen(contenerdor) {
+  crearImagen(contenerdor, sizeMargin) {
     const imagen = document.createElement("img");
     imagen.src = "../assets/trampa2.png";
-    imagen.style.left = `${this.posicionX}px`;
-    imagen.style.top = `${this.posicionY}px`;
+    imagen.style.width = "50px";
+    console.log(this.posicionX,this.posicionY);
+
+    const styleLeft = this.posicionX - sizeMargin;
+    const styleTop = this.posicionY - 190;
+
+    
+
+    imagen.style.left = `${styleLeft}px`;
+    imagen.style.top = `${styleTop}px`;
 
     contenerdor.appendChild(imagen);
+
+    return {
+      styleLeft,
+      styleTop,
+      styleLeftMax: styleLeft + 50,
+      styleTopMax: styleTop + 50
+    };
   }
 }

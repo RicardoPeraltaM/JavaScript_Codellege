@@ -7,7 +7,7 @@ class car {
     this.posicionY = posicionY;
   }
 
-  moverCarro(direccion, imagen) {
+  moverCarro(direccion, imagen, P_imagen) {
     switch (direccion) {
       case "ArrowUp":
         //   validacion para que no se salga del cuadro
@@ -36,6 +36,20 @@ class car {
         imagen.src = "../assets/derecha_arriba.png";
         imagen.style.top = `${this.posicionY++}%`;
         break;
+    }
+    this.verificarColision(P_imagen);
+  }
+
+  verificarColision(P_imagen = []) {
+    for (let i = 0; i < P_imagen.length; i++) {
+      if (
+        this.posicionX >= Math.floor(P_imagen[i].styleLeft / 10) &&
+        this.posicionX <= Math.floor(P_imagen[i].styleLeftMax / 10) &&
+        this.posicionY >= Math.floor(P_imagen[i].styleTop / 10) &&
+        this.posicionY <= Math.floor(P_imagen[i].styleTopMax / 10)
+      ) {
+        console.log("Tocando caquita");
+      }
     }
   }
 }
