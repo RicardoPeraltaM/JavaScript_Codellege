@@ -27,15 +27,15 @@ function moveCar(event) {
 }
 
 function ponerPremio(event) {
-  console.log(event);
+  // console.log(event);
 
-  console.log(event.x, event.y);
+  // console.log(event.x, event.y);
 
   const premio = new Premio(event.x, event.y);
   ObtenerMargin();
   console.log(sizeMargin);
 
-  premio.crearImagen(contenedor, sizeMargin);
+  // premio.crearImagen(contenedor, sizeMargin);
   // console.log(premio.crearImagen(contenedor, sizeMargin));
   Posicion_imagenes.push(premio.crearImagen(contenedor, sizeMargin));
   // console.log(Posicion_imagenes);

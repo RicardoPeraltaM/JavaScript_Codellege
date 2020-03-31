@@ -10,7 +10,6 @@ class Premio {
   static EliminarPremio(contenedor, id) {
     // alert("caca eliminada");
     contenedor.removeChild(document.getElementById(`${id}`));
-
   }
 
   crearImagen(contenerdor, sizeMargin) {
