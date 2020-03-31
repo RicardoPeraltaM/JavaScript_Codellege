@@ -4,6 +4,8 @@ const carro = new car(0, 0);
 let contenedor = document.getElementById("contenedor");
 let sizeMargin = 0;
 let Posicion_imagenes = [];
+let c = 0;
+
 EvenListener();
 
 function EvenListener() {
@@ -19,10 +21,11 @@ function moveCar(event) {
   carro.moverCarro(event.key, imagen);
 
   const response = carro.verificarColision(Posicion_imagenes);
-
   if (response != null) {
     Premio.EliminarPremio(contenedor, Posicion_imagenes[response].id);
     Posicion_imagenes.splice(response, 1);
+    c++;
+    console.log(c);
   }
 }
 
@@ -33,7 +36,7 @@ function ponerPremio(event) {
 
   const premio = new Premio(event.x, event.y);
   ObtenerMargin();
-  console.log(sizeMargin);
+  // console.log(sizeMargin);
 
   // premio.crearImagen(contenedor, sizeMargin);
   // console.log(premio.crearImagen(contenedor, sizeMargin));
@@ -46,7 +49,7 @@ function ObtenerMargin() {
     .getComputedStyle(contenedor)
     .getPropertyValue("margin-left");
 
-  console.log(marginContainer);
+  // console.log(marginContainer);
 
   sizeMargin = marginContainer.substring(0, marginContainer.length - 2);
 }

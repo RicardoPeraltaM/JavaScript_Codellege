@@ -23,7 +23,7 @@ class Premio {
         .split(".")[1]
     }`;
 
-    console.log(this.posicionX, this.posicionY);
+    // console.log(this.posicionX, this.posicionY);
 
     const styleLeft = this.posicionX - sizeMargin;
     const styleTop = this.posicionY - 190;
