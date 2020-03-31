@@ -16,33 +16,37 @@ function EvenListener() {
 function moveCar(event) {
   // console.log(event);
   // console.log("funciona");
-  carro.moverCarro(event.key, imagen , Posicion_imagenes);
+  carro.moverCarro(event.key, imagen);
+
+  const response = carro.verificarColision(Posicion_imagenes);
+
+  if (response != null) {
+    Premio.EliminarPremio(contenedor, Posicion_imagenes[response].id);
+    Posicion_imagenes.splice(response, 1);
+  }
 }
 
 function ponerPremio(event) {
   console.log(event);
 
   console.log(event.x, event.y);
-  
+
   const premio = new Premio(event.x, event.y);
   ObtenerMargin();
   console.log(sizeMargin);
-  
+
   premio.crearImagen(contenedor, sizeMargin);
   // console.log(premio.crearImagen(contenedor, sizeMargin));
-  Posicion_imagenes.push(  premio.crearImagen(contenedor, sizeMargin));
+  Posicion_imagenes.push(premio.crearImagen(contenedor, sizeMargin));
   // console.log(Posicion_imagenes);
-  
 }
 
 function ObtenerMargin() {
   const marginContainer = window
     .getComputedStyle(contenedor)
     .getPropertyValue("margin-left");
-    
-    console.log(marginContainer);
-    
+
+  console.log(marginContainer);
 
   sizeMargin = marginContainer.substring(0, marginContainer.length - 2);
-  
 }

@@ -11,12 +11,19 @@ body {
 .container {
   border: 3px solid white;
   position: relative;
-  height: 80vh;
+
   background-image: url(../assets/fondo3.jpg);
+  min-width: 924px;
+  min-height: 556px;
 }
 
 .container * {
   position: absolute;
   display: block;
-  width: 10%;
+  width: 80px;
 }
+
+/* #carro{
+  width: 50px;
+  height: 50px;
+} */
