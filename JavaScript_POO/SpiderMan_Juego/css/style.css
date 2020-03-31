@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lato&family=Oswald&family=PT+Sans&family=Roboto&display=swap");
+
 body {
   overflow: hidden;
 }
@@ -23,7 +25,27 @@ body {
   width: 80px;
 }
 
-/* #carro{
-  width: 50px;
-  height: 50px;
-} */
+#marco_puntuacion {
+  display: inline-block;
+  width: 33%;
+  height: 50%;
+  border: 2px solid black;
+  background-image: url(../assets/fondo3.jpg);
+  margin-left: 280%;
+  margin-top: -10%;
+}
+
+#marco_puntuacion a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+#marco_puntuacion h2 {
+  color: white;
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+}
+#acomuladorp {
+  color: white;
+  font-family: "Oswald", sans-serif;
+}

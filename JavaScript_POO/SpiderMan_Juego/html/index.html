@@ -10,6 +10,7 @@
     />
 
     <!-- Bootstrap CSS -->
+    <link rel="icon" href="../assets/icono_spiderman.png">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,19 +19,26 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
+ 
+
   <body background="../assets/fondo.jpg">
     <div class="col-12">
-        <img id="imagen"  src="../assets/titulo.png" alt="">
+      <img id="imagen" src="../assets/titulo.png" alt="" />
     </div>
     <div class="container bg-light" id="contenedor">
-      <img  src="../assets/derecha_arriba.png" id="carro" alt="" />
+      <img src="../assets/derecha_arriba.png" id="carro" alt="" />
     </div>
 
-    <div class="row">
-      <div class="col-12">
-        <h2 style="color: white;">Puntos<span></span></h2>
-      </div>
+ 
+ <div class="col-4 text-center">
+    <div class="span" id="marco_puntuacion">
+      <h2  id="puntos_titulo">Puntuacion</h2>
+      <span id="acomuladorp"></span>
+      <br>
+      <a href="javascript:location.reload()">Jugar de nuevo</a>
     </div>
+  </div>
+    
 
     <!-- Optional JavaScript -->
     <script src="../js/Car.class.js"></script>

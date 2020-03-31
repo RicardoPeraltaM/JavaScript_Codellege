@@ -1,5 +1,5 @@
 const imagen = document.getElementById("carro");
-
+let acomuladorp = document.getElementById('acomuladorp');
 const carro = new car(0, 0);
 let contenedor = document.getElementById("contenedor");
 let sizeMargin = 0;
@@ -21,11 +21,14 @@ function moveCar(event) {
   carro.moverCarro(event.key, imagen);
 
   const response = carro.verificarColision(Posicion_imagenes);
+  
   if (response != null) {
     Premio.EliminarPremio(contenedor, Posicion_imagenes[response].id);
     Posicion_imagenes.splice(response, 1);
     c++;
     console.log(c);
+    acomuladorp.innerText = c;
+
   }
 }
 
