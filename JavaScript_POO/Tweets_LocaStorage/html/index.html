@@ -29,11 +29,11 @@
         <div class="row">
           <div class="col-6 pull-left">
             <div class="form-group">
-              <form action="#" id="Formulario">
-                <label for="">Tweet</label>
+              <form action="#" id="formulario">
+                <label for="Tweet">Tweet</label>
                 <textarea
                   name=""
-                  id="txArea"
+                  id="txTeewt"
                   rows="3"
                   class="form-control"
                 ></textarea>
@@ -49,12 +49,18 @@
 
           <div class="col-6">
             <h2>Tweets</h2>
-            <div id="lista-tweets"></div>
+            <ul id="lista-tweets" class="list-group">
+
+
+            </ul>
           </div>
+
         </div>
       </div>
     </div>
     <!-- Optional JavaScript -->
+    <script src="../js/Tweet.class.js"></script>
+    <script src="../js/LocalStorage.class.js"></script>
     <script src="../js/app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
