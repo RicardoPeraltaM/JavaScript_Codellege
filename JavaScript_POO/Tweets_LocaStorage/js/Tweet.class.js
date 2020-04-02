@@ -1,13 +1,11 @@
 class Tweets {
   contenido = "";
 
-  
-
   constructor(contenido) {
     this.contenido = contenido;
   }
 
-  AgregarTweetDom(contenedor) {
+  AgregarTweetDom(contenedor, origen) {
     const li = document.createElement("li");
     li.classList = "list-group-item text-break mt-2";
     li.textContent = this.contenido;
@@ -25,13 +23,22 @@ class Tweets {
     li.appendChild(btnEliminar);
     btnEliminar.appendChild(span);
     // mandamos al localStorage
-    ManipularLocalStorage.AgregarTweetsLocalStorage(this.contenido);
-
-}
+    if (origen) ManipularLocalStorage.AgregarTweetsLocalStorage(this.contenido);
+  }
 
   static EliminarTweetDom(tweetEliminar) {
     if (tweetEliminar.target.tagName != "SPAN") return;
     //   parentElement es para acceder al elemento padre de un elemento
-    tweetEliminar.target.parentElement.parentElement.remove();
+    const liEliminado = tweetEliminar.target.parentElement.parentElement;
+
+    let textoLiEliminado = liEliminado.textContent;
+    textoLiEliminado = textoLiEliminado.substring(
+      0,
+      textoLiEliminado.length - 1
+    );
+
+    ManipularLocalStorage.EliminarTweetLS(textoLiEliminado);
+    console.log("Texto eLIMINADO" + textoLiEliminado);
+    liEliminado.remove();
   }
 }

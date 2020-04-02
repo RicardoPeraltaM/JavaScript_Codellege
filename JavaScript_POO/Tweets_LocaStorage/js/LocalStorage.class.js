@@ -20,4 +20,17 @@ class ManipularLocalStorage {
     //reconose los caracteres y los convierte de vuelta al tipo de dato que guardo 1
     return JSON.parse(localStorage.getItem("tweets"));
   }
+
+  static EliminarTweetLS(contenido) {
+    let tweetsLS = this.ObtenerLocalStorage();
+    let arrayNuevoTweetLS = [];
+
+    for (let x = 0; x < tweetsLS.length; x++) {
+      if (contenido != tweetsLS[x]) {
+        arrayNuevoTweetLS.push(tweetsLS[x]);
+      }
+    }
+
+    localStorage.setItem("tweets", JSON.stringify(arrayNuevoTweetLS));
+  }
 }
