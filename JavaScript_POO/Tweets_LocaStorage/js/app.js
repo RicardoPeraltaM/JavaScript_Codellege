@@ -20,7 +20,6 @@ function ObtenerFormulario(event) {
 
   const InstanciaTweet = new Tweets(txTeewt.value);
   InstanciaTweet.AgregarTweetDom(listaTweets, true);
-
   txTeewt.value = "";
 }
 
@@ -36,4 +35,5 @@ function CargarTweetsLS() {
     const instanciaTweet = new Tweets(TweetsLS[i]);
     instanciaTweet.AgregarTweetDom(listaTweets, false);
   }
+  
 }
