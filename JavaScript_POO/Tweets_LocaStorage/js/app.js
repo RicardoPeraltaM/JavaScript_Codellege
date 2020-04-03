@@ -35,5 +35,4 @@ function CargarTweetsLS() {
     const instanciaTweet = new Tweets(TweetsLS[i]);
     instanciaTweet.AgregarTweetDom(listaTweets, false);
   }
-  
 }
