@@ -15,4 +15,14 @@ class Carrito {
 
     if (origen) LocalStorageManipular.AgregarCarritoLS(informacionCurso);
   }
+
+  static EliminarCurso(nodoDom) {
+    const idCurso = nodoDom
+      .querySelector(".borrar-curso")
+      .getAttribute("data-id");
+    console.log(idCurso);
+
+    LocalStorageManipular.EliminarCursoLS(idCurso);
+    nodoDom.remove();
+  }
 }
