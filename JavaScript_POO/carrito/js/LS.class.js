@@ -26,7 +26,19 @@ class LocalStorageManipular {
     localStorage.setItem("cursos", JSON.stringify(nuevosCursosLS));
   }
 
-  static vaciarcarrito (){
+  static vaciarcarrito() {
     localStorage.clear();
+  }
+
+  static VerificarCursoRepetido(idCurso) {
+    const cursols = this.obtenerCursoLS();
+
+    for (let i = 0; i < cursols.length; i++) {
+      if (idCurso == cursols[i].id) {
+        return true;
+      }
+    }
+
+    return false;
   }
 }

@@ -1,5 +1,9 @@
 class Carrito {
   AgregarCursoCarrito(informacionCurso, tableCarrito, origen) {
+
+if (LocalStorageManipular.VerificarCursoRepetido(informacionCurso.id)) return;
+
+
     const tableRow = document.createElement("tr");
     tableRow.innerHTML = `
 <td><img src="${informacionCurso.imagen}" width="100%"></td>
