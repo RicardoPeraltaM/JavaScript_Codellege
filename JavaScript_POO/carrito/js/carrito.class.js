@@ -1,7 +1,7 @@
 class Carrito {
   AgregarCursoCarrito(informacionCurso, tableCarrito, origen) {
 
-if (LocalStorageManipular.VerificarCursoRepetido(informacionCurso.id)) return;
+if (LocalStorageManipular.VerificarCursoRepetido(informacionCurso.id) && origen ) return;
 
 
     const tableRow = document.createElement("tr");
