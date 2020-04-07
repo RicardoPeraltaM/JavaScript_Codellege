@@ -9,6 +9,9 @@ function eventListener() {
   IniciarCarrito();
 
   document.querySelector("#carrito").addEventListener("click", EliminarCarrito);
+  document
+    .querySelector("#vaciar-carrito")
+    .addEventListener("click", vaciarCarrito);
 }
 
 function GuardarCursoCarrito(event) {
@@ -58,7 +61,9 @@ function EliminarCarrito(event) {
   // console.log("la clase es : " + event.target.classList.value);
   // console.log(event.target.parentElement.parentElement);
 
-  Carrito.EliminarCurso(
-    event.target.parentElement.parentElement);
+  Carrito.EliminarCurso(event.target.parentElement.parentElement);
+}
 
+function vaciarCarrito() {
+  Carrito.VaciarCarrito(tableCarrito);
 }

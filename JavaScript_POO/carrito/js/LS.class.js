@@ -25,4 +25,8 @@ class LocalStorageManipular {
 
     localStorage.setItem("cursos", JSON.stringify(nuevosCursosLS));
   }
+
+  static vaciarcarrito (){
+    localStorage.clear();
+  }
 }

@@ -25,4 +25,12 @@ class Carrito {
     LocalStorageManipular.EliminarCursoLS(idCurso);
     nodoDom.remove();
   }
+
+  static VaciarCarrito(tableCurso) {
+    while (tableCurso.firstChild) {
+      tableCurso.firstChild.remove();
+    }
+
+    LocalStorageManipular.vaciarcarrito();
+  }
 }
