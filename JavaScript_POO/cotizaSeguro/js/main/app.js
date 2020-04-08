@@ -14,8 +14,7 @@ function CotizarSeguro(event) {
   event.preventDefault();
 
   const marcaSeleccionada = document.getElementById("marca").value;
-
-  const tipo = document.querySelector('input[name = "tipo"]:checked');
+  const tipo = document.querySelector('input[name = "tipo"]:checked').value;
   const valueAnio = anio.value;
 
   const interfaz = new Interfaz();
@@ -28,12 +27,16 @@ function CotizarSeguro(event) {
     return;
   }
 
-  const resultado = document.querySelector('#resultado div')
+  const resultado = document.querySelector("#resultado div");
 
   if (resultado != null) resultado.remove();
 
+  const seguro = new Seguro(marcaSeleccionada, valueAnio, tipo);
+  const total = seguro.cotizarSeguro();
+  console.log(total);
 
-
+  interfaz.mostrarResultado(seguro, total);
+  interfaz.mostrarMensaje("Cotizando...", "exito");
 }
 
 function llenarSelectAnio() {
