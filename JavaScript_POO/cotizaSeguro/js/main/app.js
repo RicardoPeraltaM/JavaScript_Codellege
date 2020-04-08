@@ -14,6 +14,7 @@ function CotizarSeguro(event) {
   event.preventDefault();
 
   const marcaSeleccionada = document.getElementById("marca").value;
+
   const tipo = document.querySelector('input[name = "tipo"]:checked');
   const valueAnio = anio.value;
 
@@ -24,7 +25,15 @@ function CotizarSeguro(event) {
       "Faltan datos , favor de revisar el formulario",
       "error"
     );
+    return;
   }
+
+  const resultado = document.querySelector('#resultado div')
+
+  if (resultado != null) resultado.remove();
+
+
+
 }
 
 function llenarSelectAnio() {

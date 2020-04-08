@@ -13,5 +13,12 @@ class Interfaz {
     document
       .querySelector("#cotizar-seguro")
       .insertBefore(div, document.querySelector(" .form-group"));
-  }
+      
+      
+      setTimeout( function () {
+          document.querySelector('.mensaje').remove();     
+        }, 5000);
+        
+    }
+
 }
