@@ -11,9 +11,15 @@ function imagenMovimiento(event) {
   console.log("cordenadas click: " + "X: " + event.pageX, "Y: " + event.pageY);
   console.log(idioma);
   console.log(event);
-//   validamos que seleccione un idioma 
+  //   validamos que seleccione un idioma
   if (idioma != "") {
-    let Cuerpo = new cuerpo();
-    Cuerpo.CuerpoParteSeleccionada(event.pageX, event.pageY, idioma);
+    resultado.setAttribute('class', 'alert alert-primary text-center')
+
+   let Cuerpo = new cuerpo();
+   let parte =  Cuerpo.CuerpoParteSeleccionada(event.pageX, event.pageY, idioma);
+    resultado.innerHTML = parte;
+  } else{
+      resultado.setAttribute('class', 'alert alert-danger')
+      resultado.innerHTML= "Selecciona idioma";
   }
 }

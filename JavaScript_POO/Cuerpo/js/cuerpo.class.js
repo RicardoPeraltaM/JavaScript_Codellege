@@ -5,15 +5,16 @@ class cuerpo {
     //   console.log('entro clase cuerpo');
     console.log(x);
     console.log(y);
-
-    if ((x > 281 && y < 311) || (x > 275 && y < 304) || (x > 271 && y < 303)) {
+    let parte;
+    if ((x > 279 && y < 311) || (x > 275 && y < 310) || (x > 266 && y < 306)) {
       console.log(idioma);
 
       if (idioma == "español") {
-        let parte = "Mano derecha";
+        parte = "Mano derecha";
         return parte;
       } else {
-        console.log("rigth hand");
+        parte = "Rigth hand";
+        return parte;
       }
     }
   }
