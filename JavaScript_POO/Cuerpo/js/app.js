@@ -8,8 +8,12 @@ function EventListener() {
 
 function imagenMovimiento(event) {
   let idioma = document.getElementById("idioma").value;
-  console.log("funciona");
-
   console.log("cordenadas click: " + "X: " + event.pageX, "Y: " + event.pageY);
   console.log(idioma);
+  console.log(event);
+//   validamos que seleccione un idioma 
+  if (idioma != "") {
+    let Cuerpo = new cuerpo();
+    Cuerpo.CuerpoParteSeleccionada(event.pageX, event.pageY, idioma);
+  }
 }
