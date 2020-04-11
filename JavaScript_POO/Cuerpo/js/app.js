@@ -10,7 +10,7 @@ function imagenMovimiento(event) {
   let idioma = document.getElementById("idioma").value;
   console.log("cordenadas click: " + "X: " + event.pageX, "Y: " + event.pageY);
   console.log(idioma);
-  console.log(event);
+//   console.log(event);
   //   validamos que seleccione un idioma
   if (idioma != "") {
     resultado.setAttribute('class', 'alert alert-primary text-center')
